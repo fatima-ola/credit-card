@@ -1,13 +1,69 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  color: #ffffff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.wrapper {
+  width: 350px;
+  height: 230px;
+  background-color: rgb(49, 91, 170);
+  border-radius: 15px;
+}
+
+.card-title {
+  text-align: right;
+  margin-right: 1.2rem;
+  font-size: 1.5rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.card-number-wrapper {
+  margin-top: 3rem;
+}
+
+.card-number {
+  text-align: center;
+  letter-spacing: 0.2rem;
+  font-size: 1.5rem;
+  font-family: Helvetica;
+  margin-bottom: 0;
+}
+
+.card-number-2 {
+  margin-top: 0;
+  padding-left: 2rem;
+}
+
+.Validity-info {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.valid {
+  display: flex;
+  margin: 0 auto;
+  width: 120px;
+}
+
+.valid-thru p {
+  margin: 0;
+  font-size: 0.5rem;
+}
+
+.expiry-date {
+  padding-left: 0.5rem;
+}
+
+.holder-name {
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin: 0 auto;
+  width: 300px;
+  padding-top: 1rem;
 }
