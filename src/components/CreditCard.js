@@ -1,12 +1,13 @@
 import React from "react";
 
-const CreditCard = ({ cardInfo }) => {
+const CreditCard = ({ props }) => {
+  const { bankName, creditCardNumber, expiryDate, personName } = props;
   return (
     <div className="card">
       <div className="wrapper">
-        <h3 className="card-title">{cardInfo.bankName}</h3>
+        <h3 className="card-title">{bankName}</h3>
         <div className="card-number-wrapper">
-          <p className="card-number">{cardInfo.creditCardNumber}</p>
+          <p className="card-number">{creditCardNumber}</p>
           <p className="card-number-2">1234</p>
         </div>
         <div className="validity-info">
@@ -15,10 +16,10 @@ const CreditCard = ({ cardInfo }) => {
               <p>VALID</p>
               <p>THRU</p>
             </div>
-            <span className="expiry-date">{cardInfo.expiryDate}</span>
+            <span className="expiry-date">{expiryDate}</span>
           </div>
         </div>
-        <h3 className="holder-name">{cardInfo.personName}</h3>
+        <h3 className="holder-name">{personName}</h3>
       </div>
     </div>
   );
