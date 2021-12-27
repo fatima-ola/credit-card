@@ -1,7 +1,7 @@
 import React from "react";
 
-const CreditCard = ({ props }) => {
-  const { bankName, creditCardNumber, expiryDate, personName } = props;
+const CreditCard = ({ cardInfo }) => {
+  const { bankName, creditCardNumber, expiryDate, personName } = cardInfo;
   return (
     <div className="card">
       <div className="wrapper">
